@@ -1,0 +1,166 @@
+<aiml>
+
+    <category>
+        <pattern>MENU</pattern>
+        <template>
+            Digite "pedido" para iniciar um pedido ou digite "sair" para finalizar o sistema a qualquer
+            momento.
+        </template>
+    </category>
+
+    <category>
+        <pattern>INICIO</pattern>
+        <template>
+            <random>
+                <li>Seja bem vindo, para mais informações digite "menu"</li>
+                <li>Oi, pode inicilizar seu pedido digitando pedido ou digite Menu para mais informações</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SAIR</pattern>
+        <template>
+            Obrigado pela preferencia, volte sempre.
+        </template>
+    </category>
+
+    <category>
+        <pattern>PEDIDO</pattern>
+        <template>
+            Você pode pedir pastel ou pizza digitando "Patel de" ou "Pizza de" seguido do sabor, Exemplo "Pastel de frango".
+        </template>
+    </category>
+
+    <category>
+        <pattern>PIZZA DE *</pattern>
+        <template> Você está pedindo uma pizza de <star index = "1"/>, digite ok para concluir o pedido ou apenas o nome de algum sabor para adicionar mais pizzas </template>
+    </category>
+
+    <category>
+        <pattern>PASTEL DE *</pattern>
+        <template> Você está pedindo um pastel de <star index = "1"/>, digite ok para concluir o pedido ou apenas o nome de algum sabor para adicionar mais pizzas </template>
+    </category>
+
+    <category>
+        <pattern>VALOR</pattern>
+        <template>
+                As pizzas tem valor de R$ 30,00
+                Os pastéis tem valor de R$ 5,00
+        </template>
+    </category>
+
+    <category>
+        <pattern>LUGAR</pattern>
+        <template>
+            Centro
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENTREGA</pattern>
+        <template>
+            Entrega de 16:00 as 00:00 de terça a domingo
+        </template>
+    </category>
+
+    <category>
+        <pattern>CALABRESA</pattern>
+        <template>
+            Adicionado pizza de calabresa
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUSSARELA</pattern>
+        <template>
+            Adicionado pizza de mussarela
+        </template>
+    </category>
+
+    <category>
+        <pattern>BACON</pattern>
+        <template>
+            Adicionado pizza de bacon
+        </template>
+    </category>
+
+    <category>
+        <pattern>CARNE</pattern>
+        <template>
+            Adicionado pastel de carne
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUEIJO</pattern>
+        <template>
+            Adicionado pastel de queijo
+        </template>
+    </category>
+
+    <category>
+        <pattern>FRANGO</pattern>
+        <template>
+            Adicionado pastel de frango
+        </template>
+    </category>
+
+    <category>
+        <pattern>PROMOÇÃO</pattern>
+        <template>
+            Sem promoção no momento
+        </template>
+    </category>
+
+    <category>
+        <pattern>OK</pattern>
+        <template>
+            Deseja pagar com debito, credito ou dinheiro?
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEBITO</pattern>
+        <template>
+            O pagamento será feito com cartão de débito, digite sair para fechar o chat
+        </template>
+    </category>
+
+    <category>
+        <pattern>CREDITO</pattern>
+        <template>
+            O pagamento será feito com cartão de crédito, digite sair para fechar o chat
+        </template>
+    </category>
+
+    <category>
+        <pattern>DINHEIRO</pattern>
+        <template>
+            O pagamento será feito com dinheiro, digite sair para fechar o chat
+        </template>
+    </category>
+
+    <category>
+        <pattern>HORARIO</pattern>
+        <template>
+            Terça a Domingo de 16:00 até 00:00
+        </template>
+    </category>
+
+    <category>
+        <pattern>SABORES</pattern>
+        <template>
+            Pizza: Calabresa, Mussarela e Bacon
+            Pastel: Frango, Carne e Queijo
+        </template>
+    </category>
+
+    <category>
+        <pattern>PAGAMENTO</pattern>
+        <template>
+            Pode ser realizado com cartões de crédito / débito ou dinheiro
+        </template>
+    </category>
+
+</aiml>
